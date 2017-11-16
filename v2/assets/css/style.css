@@ -1,0 +1,728 @@
+a{
+	text-decoration:none;
+	color:#000;
+}
+*{
+	margin:0px;
+	padding:0px;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+	outline:0;
+	list-style:none;
+	}
+	#index{
+		background-color:#fff;
+	}
+	#header{
+		background-color:#fff;
+		box-shadow: 0 0 0.4vw rgba(83,78,76,.5);
+		width:100%;
+		top:0;
+		position:relative;
+		left:0;
+		height:3.3vw;
+		z-index:200;
+	}
+	#shadow-destaque{
+		width:100%;
+		height:4vw;
+		background-image: linear-gradient(transparent, #fff 61%);
+		position:absolute;
+		bottom:0vw;
+	}
+	#menu-index{
+		width:55%;
+		height:100%;
+		background-color:#f2f2f2;
+		position:relative;
+		z-index:100;
+		top:9vw;
+		margin:0 auto;
+		box-shadow: 0 1px 2px rgba(0,0,0,.85);
+		-moz-box-shadow: 0 1px 2px rgba(0,0,0,.85);
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.85);
+	}
+	#logo{
+	width: 6vw;
+    height: 6vw;
+    position: absolute;
+    left: 0;
+    right: 40%;
+    margin: -1.5vw auto 0vw auto;
+    background-image: url(http://localhost/img/icons/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+	float:left;
+	opacity:0.7;
+	}
+	#logo:hover{
+		opacity:1;
+	}
+	#top-align{
+		margin:0 auto;
+		width:55%;
+		height:100%;
+	}
+	#li{
+		color:#333;
+		font-size:1vw;
+		float:left;
+		margin-left:1vw;
+		position:relative;
+		top:1.3vw;
+		left:12vw;
+		cursor:pointer;
+	}
+	#li:hover{
+		color: #f78c25;
+		transition: color .2s ease-out;
+	}
+	.nome{
+	border: none;
+    padding: 0 0 0 0.4vw;
+    width: 15vw;
+	height:1.85vw;
+    font-size: 0.8vw;
+    font-weight: 400;
+    border-radius: 0.1vw;
+	float:right;
+	border:0.01vw solid #ccc;
+	top:1vw;
+	position:relative;
+	}
+	.nome:focus{
+		border:0.01vw solid #f78c25;
+	}
+	#ben{
+		float:right;
+		position:relative;
+		height:1.3vw;
+		width:1.3vw;
+		top:1.3vw;
+		left:-1.35vw;
+		z-index:4;
+		background-color:#fff;
+	}
+	#right-menu-index{
+		float:right;
+		width:32%;
+		background-color:transparent;
+		height:40%;
+		position:relative;
+		top:2vw;
+		right:0.5vw;
+	}
+	#destaque{
+		width: 2.8vw;
+		height: 4.5vw;
+		position:relative;
+		float:left;
+		top:0.5vw;
+		left:0vw;
+	}
+	#animes{
+		position:relative;
+		width:100%;
+		height:25%;
+		cursor:pointer;
+		display:inline-block;
+	}
+	#animes:hover{
+		box-shadow:0.1vw 0.1vw rgba(0,0,0,0.20);
+		background-color:#fff;
+	}
+	#desq{
+		float:left;
+		position:relative;
+		top:-1vw;
+		left:0vw;
+		color:#010101;
+		font-size:0.8vw;
+		font-weight: 700;
+	}
+	#name-anime{
+		position:relative;
+		top:1.2vw;
+		left:0vw;
+		width:100%;
+		font-size:1vw;
+		color:#3f3f3f;
+	}
+	#line-right{
+		height:100%;
+		width:0.1vw;
+		position:relative;
+		background-color:#ccc;
+		float:right;
+		z-index:1;
+		right:20vw;
+	}
+	#line-bottom{
+		height:0.01vw;
+		width:18vw;
+		position:absolute;
+		background-color:#ccc;
+		float:right;
+		z-index:1;
+		right:20vw;
+		top:21vw;
+		right:1vw;
+	}
+	#lanc{
+		width:50%;
+		height:15vw;
+		position:relative;
+		top:1vw;
+		z-index:1;
+	}
+	.info{
+		width:49.8%;
+		height:5vw;
+		top:11vw;
+		left:4.9vw;
+		background-color:rgba(0,0,0,0.50);
+		position:absolute;
+		z-index:5;
+	}
+	#name-anime-info{
+		color:#fff;
+		font-size:1.2vw;
+		float:left;
+		position:relative;
+		left:1vw;
+	}
+	#name-anime-info-desc{
+		color:#fff;
+		font-size:0.9vw;
+		float:left;
+		top:0vw;
+		left:0vw;
+		position:relative;
+	}
+	#watch-now{
+		position:absolute;
+		top:13.8vw;
+		right:23vw;
+		z-index:10;
+		background-color:#f78c25;
+		border:none;
+		height:2vw;
+		color:#fff;
+		border-radius:0.2vw;
+		width:5vw;
+		cursor:pointer;
+		font-size:0.8vw;
+	}
+	#anime{
+		background-color:#f2f2f2;
+	}
+	#main-anime{
+		width:47%;
+		height:50vw;
+		background-color:#fff;
+		position:relative;
+		margin:0 auto;
+		top:8vw;
+		box-shadow:0.1vw 0.1vw 0.1vw 0.1vw rgba(0,0,0,0.30);
+		z-index:22;
+	}
+	#ep-anime{
+		width:65%;
+		height:100%;
+		z-index:0;
+	}
+	#name-anime-anime{
+		color:#3f3f3f;
+		font-weight: inherit;
+		font-size: 100%;
+		font-size:1.2vw;
+		margin:0.4vw 0;
+		position:relative;
+		left:1vw;
+		}
+		#tab-anime{
+			background-color:#555;
+			width:100%;
+			height:2vw;
+			border-radius:0.1vw;
+			box-shadow:0.1vw 0.1vw 0.1vw 0.1vw rgba(0,0,0,0.20);
+		}
+		.buttonvideos{
+			background-color:#fff;
+			border:none;
+			height:2vw;
+			left:0.3vw;
+			position:relative;
+			width:5.5vw;
+			top:0vw;
+			font-size:0.9vw;
+			cursor:pointer;
+		}
+		#branco-tab{
+			width:100%;
+			background-color:#fff;
+			height:2vw;
+			box-shadow:0.1vw 0.1vw 0.1vw 0.1vw rgba(0,0,0,0.20);
+		}
+		#branco-tab p{
+			color:#000;
+			position:relative;
+			left:1vw;
+			top:0.5vw;
+			cursor:pointer;
+		}
+		#branco-tab p:hover{
+			color:#0A6DA4;
+		}
+		#right-anime{
+			float:right;
+			height:50%;
+			width:33%;
+			position:absolute;
+			z-index:4;
+			top:1.9vw;
+			right:0.5vw;
+		}
+		#anime-foto-banner{
+			height:23vw;
+			width:15.5vw;
+			z-index:0;
+			position:relative;
+			opacity:0.8;
+			cursor:pointer;
+		}
+		#anime-foto-banner:hover{
+			opacity:1;
+			transition:opacity 1.25s; -webkit-transition:opacity 1.25s;
+		}
+		#episode{
+			display:block;
+		}
+		#comentarios{
+			width:100%;
+			background-color:transparent;
+			height:50%;
+			display:none;
+			top:2vw;
+			position:relative;
+		}
+		#episode img{
+			width:6vw;
+			height:5vw;
+			position:relative;
+			left:0.3vw;
+			top:0.5vw;
+		}
+		#episode li{
+			position:relative;
+			top:2vw;
+			background-color:#f2f2f2;
+			width:6.8vw;
+			height:8vw;
+			box-shadow:0.1vw 0.1vw 0.1vw 0.1vw rgba(0,0,0,0.10);
+			float:left;
+			margin-left:0.5vw;
+			margin-top:0.5vw;
+			cursor:pointer;
+			left:0.5vw;
+			margin-top:2vw;
+		}
+		#episode li:hover{
+			box-shadow:0.1vw 0.1vw 0.1vw rgba(0,0,0,0.30);
+			background-color:#e5e5e5;
+		}
+		#episode p{
+			position:relative;
+			float:left;
+			left:1vw;
+			top:1vw;
+			font-size:0.9vw;
+			color:#555;
+		}
+		#watch-anime{
+			background-color:#0A6DA4;
+			border:none;
+			color:#fff;
+			position:relative;
+			top:1vw;
+			height:2vw;
+			width:5vw;
+			border-radius:0.1vw;
+			font-size:0.9vw;
+			cursor:pointer;
+		}
+		#watch-anime:hover{
+			background-color:#0a4a6d;
+		}
+		#buttons-top{
+			float:right;
+			position:relative;
+			right:1.5vw;
+			top:0.9vw;
+		}
+		#account{
+			border:none;
+			background-color:transparent;
+			cursor:pointer;
+			cursor:pointer;
+		}
+		#account-svg{
+			height:1.5vw;
+			fill:#555;
+		}
+		#account-svg:hover{
+			fill:#f78c25;
+		}
+		#account-svg:hover + #login-p{
+			color:#f78c25;
+		}
+		#login-p{
+			text-align:center;
+			color:#555;
+			font-size:0.8vw;
+		}
+		#login-p:hover + #account-svg{
+			fill:#f78c25;
+		}
+		#box-s-h{
+			float:right;
+			position:absolute;
+			background-color:red;
+			width:17%;
+			height:auto;
+			right:22.5vw;
+			top:3vw;
+			box-shadow:0.1vw 0.1vw 0.1vw rgba(0,0,0,0.50);
+		}
+		.src{
+			background-color:#fff;
+			width:auto;
+			cursor:pointer;
+		}
+		#birlada:hover{
+			background-color:#f2f2f2;
+			box-shadow:0.1vw 0.1vw 0.1vw rgba(0,0,0,0.50);
+		}
+		#searchimg{
+			width:3vw;
+			height:3vw;
+			position:relative;
+			left:0.5vw;
+			top:0.2vw;
+		}
+		.name{
+			color:#555;
+			text-decoration:none;
+			position:relative;
+			text-align:center;
+			top:-1vw;
+			left:1vw;
+			font-size:0.9vw;
+		}
+		#left-account{
+			background-color:#f7efef;
+			width:50%;
+			margin:0 auto;
+			height:100%;
+			float:left;
+		}
+		#left-account h1{
+			font-size:1.3vw;
+			position:relative;
+			left:2vw;
+			top:2vw;
+			color:#555;
+		}
+			#right-account h1{
+			font-size:1.3vw;
+			position:relative;
+			left:2vw;
+			top:2vw;
+			color:#555;
+		}
+		#right-account{
+			background-color:#fff;
+			width:50%;
+			margin:0 auto;
+			height:100%;
+			float:right;
+		}
+		#main-account{
+		width:63%;
+		background-color:#fff;
+		height:30%;
+		margin:0 auto;
+		position:relative;
+		top:2vw;
+		box-shadow:0.1vw 0.1vw 0.1vw rgba(0,0,0,0.20);
+		border-radius:0.4vw;
+		}
+		footer{
+			background-color:transparent;
+			width:100%;
+			position:absolute;
+			height:10%;
+			bottom:0vw;
+		}
+		.formularios-cadastro{
+			top:3vw;
+			position:relative;
+			left:2vw;
+		}
+		.formularios-cadastro p{
+			position:relative;
+			float:left;
+			margin-left:0.5vw;
+			top:0.5vw;
+			font-size:1vw;
+		}
+		.formularios-cadastro input{
+			border:none;
+			border:0.02vw solid #bbb;
+			height:2.5vw;
+			width:12vw;
+			float:left;
+			margin-left:1.5vw;
+			left:0.5vw;
+			margin-top:1vw;
+			padding:0.5vw 1vw;
+			font-size:0.8vw;
+			border-radius:0.3vw;
+		}
+		.formularios-cadastro input:focus{
+			border:0.02vw solid #f78c25;
+		}
+		.formularios-cadastro input:hover{
+			border:0.02vw solid #f78c25;
+		}
+		#button-cadastro{
+			border:none;
+			position:relative;
+			top:1vw;
+			height:2vw;
+			width:9vw;
+			background-color:#000;
+			color:#fff;
+			font-size:1vw;
+			cursor:pointer;
+			float:right;
+			right:5vw;
+		}
+		#button-cadastro:hover{
+			background-color:#f78c25;
+		}
+		#vantagem{
+			width:100%;
+			background-image:url("http://localhost/v2/cadastro/kiminoback.jpg");
+			position:relative;
+			height:30%;
+			top:17vw;
+			box-shadow:0.1vw 0.1vw 0.1vw rgba(0,0,0,0.60);
+		}
+		#info{
+			position:relative;
+			top:2vw;
+			background-color:#fff;
+			box-shadow:0.1vw 0.1vw 0.1vw rgba(0,0,0,0.30);
+		}
+		#info p{
+			font-size:0.95vw;
+		}
+		#btncoment{
+			background-color:#555;
+			color:#fff;
+		}
+		#input-comentar{
+			border:none;
+			border:0.01vw solid #bbb;
+			height:2vw;
+			width:100%;
+			position:relative;
+			top:-1.5vw;
+			float:right;
+			padding:0.5vw 0.9vw;
+			left:0.1vw;
+			font-size:0.9vw;
+		}
+		#error{
+			position:absolute;
+			width:auto;
+			height:3vw;
+			background-color:rgba(150, 6, 6, 0.82);
+			bottom:0vw;
+			border-radius:0.2vw;
+			margin:0vw auto;
+		}
+		#error p{
+			text-align:center;
+			float:left;
+			font-size:0.9vw;
+			top:1vw;
+			position:relative;
+		}
+		#foto-perfil{
+			height:2.0vw;
+			width:2.0vw;
+			border:0.01vw solid #555;
+			border-radius:0.3vw;
+			top:1vw;
+			position:relative;
+			z-index:5;
+			left:-3vw;
+		}
+		#lanc-ep{
+			border-top:0.01vw solid #ccc;
+			width:63%;
+			height:62%;
+			position:relative;
+			background-color:#f2f2f2;
+			float:left;
+			top:2vw;
+		}
+		#news{
+			width:100%;
+			height:auto;
+			background-color:#fff;
+			box-shadow:0.1vw 0.1vw 0.1vw 0.1vw rgba(0,0,0,0.40);
+			top:0.5vw;
+			position:relative;
+		}
+		#news p{
+			font-size:1vw;
+			color:#555;
+			text-align:center;
+		}
+		#close{
+			border:none;
+			position:relative;
+			float:right;
+			top:-1.15vw;
+			right:1vw;
+			color:red;
+			font-size:1vw;
+			background-color:transparent;
+			cursor:pointer;
+		}
+		#close:hover{
+			background-color:rgba(0,0,0,0.50);
+			color:#fff;
+		}
+		#watch-main{
+			width:65%;
+			position:relative;
+			height:auto;
+			background-color:transparent;
+			margin:0vw auto;
+		}
+		#assistindo{
+			width:90%;
+			position:relative;
+			height:20vw;
+			background-color:transparent;
+			margin:0vw auto;
+			top:1vw;
+		}
+		#assistindo p{
+			font-size:1.2vw;
+		}
+		#assistindo a:hover{
+			text-decoration:underline;
+		}
+		#playerwatchpri{
+			width:100%;
+			height:33vw;
+		}
+		#episode-watch{
+			width:60%;
+			height:9vw;
+			background-color:#fff;
+			border:0.1vw solid #bbb;
+			border-top:0.1vw solid transparent;
+			z-index:5;
+		}
+		#watch-bottom{
+			background-color:#555;
+			width:100%;
+			height:3vw;
+			position:relative;
+			top:-0.5vw;
+		}
+		#left{
+			float:left;
+			height:5vw;
+			background-color:rgba(0,0,0,0.30);
+			border:none;
+			opacity:0.8;
+			cursor:pointer;
+		}
+		#right{
+			float:right;
+			height:5vw;
+			background-color:rgba(0,0,0,0.30);
+			border:none;
+			opacity:0.8;
+			cursor:pointer;
+		}
+		#left:hover{
+			background-color:rgba(0,0,0,0.50);
+			opacity:1;
+		}
+		#right:hover{
+			background-color:rgba(0,0,0,0.50);
+			opacity:1;
+		}
+		#left-img{
+			height:3vw;
+		}
+		#right-img{
+			height:3vw;
+		}
+		#arrows{
+			position:relative;
+			top:2vw;
+		}
+		#buttons{
+			float:left;
+		}
+		#buttonpmp{height:2.5vw;width:2.5vw;float:left;background-color:transparent;border:none;position:relative;top:0vw;cursor:pointer;fill:#fff;}
+		#buttonpp{height:2.5vw;width:2.5vw;float:left;background-color:transparent;border:none;position:relative;top:0vw;cursor:pointer;fill:#fff;}
+		#mute{height:2.5vw;width:2.5vw;float:left;background-color:transparent;border:none;position:relative;top:0vw;cursor:pointer;}
+		#muted{height:2.5vw;width:2.5vw;float:left;background-color:transparent;border:none;position:relative;top:0vw;cursor:pointer;}
+		#currtime{color:#fff;float:left;float:left;font-size:1.5vw;position:absolute;top:0.8vw;left:9vw;}
+		#durtime{color:#fff;float:right;font-size:1.5vw;position:absolute;top:0.8vw;right:3vw;}
+		#fullscreenedico{background-color:transparent;height:2vw;width:2vw;float:right;border:none;right:0.5vw;position:absolute;cursor:pointer;top:0.5vw;display:none;}
+		#fullscreenico{background-color:transparent;height:2vw;width:2vw;float:right;border:none;right:0.5vw;position:absolute;cursor:pointer;top:0.5vw;}
+		#fastFwd{height:2.5vw;width:2.5vw;float:left;background-color:transparent;border:none;position:relative;top:0vw;cursor:pointer;}
+		#defaultBar{position:relative; float:left; background-color:rgba(255,255,255,0.45); width:0; max-width:100%; height:0.4vw; z-index:6; border-radius:0.2vw;cursor:pointer;}
+		#progressBar{position:relative; background-color:#1f3c80; opacity:0.92; width:0; max-width:100%; height:0.4vw; z-index:7; border-radius:0.2vw;cursor:pointer;}
+		#shortbs{cursor:pointer;background: rgba(255, 255, 255, 0.3);}
+		#timer{
+			position:absolute;
+			float:left;
+			left:0vw;
+			top:0vw;
+		}
+		#right-watch{
+			float:right;
+			height:9.5vw;
+			width:38%;
+			background-color:#f2f2f2;
+			position:relative;
+			z-index:0;
+			top:-9.5vw;
+			box-shadow:0.1vw 0.1vw 0.1vw 0.1vw rgba(0,0,0,0.30);
+		}
+		#right-watch img{
+			width:7vw;
+			height:9vw;
+			left:1vw;
+			position:relative;
+		}
+		#right-watch p{
+			font-size:1.1vw;
+			font-size:#555;
+			width:55%;
+			float:left;
+			
+		}
